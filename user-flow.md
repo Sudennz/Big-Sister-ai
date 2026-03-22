@@ -36,4 +36,8 @@
 - Mod seçim butonları (Duygusal / Akademik / Hobi / Kariyer)
 - Mesaj geçmişi alanı
 - Mesaj yazma kutusu
+<<<<<<< HEAD
 - Gönder butonu
+=======
+- Gönder butonu
+>>>>>>> 77f77ccfc41cb7f50dfd44e441c947eec3583e06

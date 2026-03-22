@@ -52,4 +52,10 @@
 ## Görev 9: Deploy
 - [ ] GitHub reposuna yükle
 - [ ] Netlify ile yayınla
+<<<<<<< HEAD
 - [ ] Yayın linkini test et
+=======
+- [ ] Yayın linkini test et
+
+
+>>>>>>> 77f77ccfc41cb7f50dfd44e441c947eec3583e06

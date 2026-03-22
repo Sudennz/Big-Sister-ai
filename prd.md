@@ -59,4 +59,8 @@ hedeflenmektedir.
 - Kullanıcı hesabı / giriş sistemi
 - Sohbet geçmişinin kaydedilmesi
 - Ebeveyn paneli
+<<<<<<< HEAD
 - Bildirim sistemi
+=======
+- Bildirim sistemi
+>>>>>>> 77f77ccfc41cb7f50dfd44e441c947eec3583e06

@@ -15,4 +15,8 @@
 - Başlangıç seviyesi için uygun
 - Hızlı prototip çıkarmak için ideal
 - Ücretsiz planlar buildathon için yeterli
+<<<<<<< HEAD
 - Türkçe AI desteği en iyi Claude'da
+=======
+- Türkçe AI desteği en iyi Claude'da
+>>>>>>> 77f77ccfc41cb7f50dfd44e441c947eec3583e06
