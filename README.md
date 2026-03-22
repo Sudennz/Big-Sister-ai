@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 `.env` dosyasına Gemini API key ekle:
-
+VITE_GEMINI_API_KEY=your_api_key_here
 
 ## Geliştirici
 Sude Naz Ateş
