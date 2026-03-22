@@ -1,11 +1,41 @@
-1. Problem (Ne çözüyorum?)
-Günümüzün ekonomik şartları nedeniyle ebeveynlerin yoğun çalışma temposu, çocuklarla iletişimin sadece ders ve not odaklı hale gelmesine neden olmaktadır. Çocuklar ve gençler; güncel trendleri, hobileri veya psikolojik sıkıntılarını ailelerine açmakta zorlanmakta, kendilerini yalnız ve anlaşılmamış hissetmektedir. Özellikle tek çocuklar veya ablasıyla/abisiyle yaş farkı çok fazla olduğu için onlarla ortak noktada buluşamayan küçük çocuklar için bu duygusal boşluk derinleşmektedir
-2. Kullanıcı (Bu uygulamayı kim kullanacak?)
-Birincil Kullanıcı: İletişim desteğine, rehberliğe ve dertleşecek bir "abla" figürüne ihtiyaç duyan 10-18 yaş arası çocuklar ve gençler.İkincil Kullanıcı: Çocuklarının iç dünyasını, ilgi alanlarını ve duygu durumunu etik bir çerçevede takip etmek isteyen çalışan ebeveynler.
-3. AI'nın Rolü (Yapay zeka bu çözümde ne yapıyor?)
-Yapay zeka, kullanıcının seçtiği profile (yaş farkı, uzmanlık, karakter tonu) göre dinamik bir "Abla" personası oluşturur.Akademik Mod: Motivasyonel ders desteği ve ödev yardımı sağlar.Duygusal Mod: Empatik dinleme, dertleşme ve güvenli bir liman olma görevi üstlenir.Hobi Modu: Ortak ilgi alanları (film, sanat, müzik) üzerinden yaratıcı sohbetler geliştirir.Analiz: Sohbetleri anonimleştirerek ebeveynler için haftalık duygu ve ilgi odağı raporları hazırlar.
-4. Rakip Durum (Benzer çözümler var mı? Benimki nasıl farklı?)
-Piyasada genel amaçlı chatbotlar (ChatGPT) veya klinik odaklı terapi uygulamaları (Wysa) bulunmaktadır.
-Farkımız: "Big Sister", sadece bir asistan değil, aile bağlarını güçlendiren duygusal bir köprüdür.Boşluk: Mevcut uygulamalar ebeveyne "çocuğunla şu konuda konuşabilirsin" diyen somut aktivite önerileri ve pedagojik temelli, kişiselleştirilebilir bir abla personası sunmamaktadır.
-5. Başarı Kriteri (Bu proje başarılı olursa ne değişecek?)
-Çocuğun kendisini daha az yalnız hissetmesi, dijital dünyada güvenli bir abla desteği alması ve ebeveynin, çocuğuyla kurduğu iletişimin kalitesinin (ders dışı konularda) artması hedeflenmektedir.
+## Problem
+Günümüzde artan ekonomik baskılar nedeniyle ebeveynlerin çoğu tam zamanlı
+çalışmak zorunda kalıyor. Bu durum ebeveyn-çocuk iletişimini kısıtlıyor;
+konuşmalar çoğunlukla notlar ve derslerle sınırlı kalıyor. Çocuklar ve
+gençler duygusal sorunlarını, hobilerini, günlük hayatlarını paylaşacak
+birine ihtiyaç duyuyor. Ablası olan kişiler de ablalarının kendi hayatıyla
+meşgul olması nedeniyle yeterince vakit bulamıyor. Yetişkinler ise iş
+hayatında ya da kişisel konularda kendinden biraz büyük, deneyimli birine
+danışmak istiyor.
+
+## Kullanıcı
+- Ebeveynler: Çocukları için abla profili oluşturan aileler
+- Çocuklar ve gençler (10-18 yaş): Kendi profillerini kendileri kuranlar
+- Yetişkinler (18+): Kariyer veya duygusal destek için kullananlar
+
+## AI'ın Rolü
+Kullanıcının belirlediği profile göre kişiselleştirilmiş bir "abla" karakteri
+oluşturur. Bu abla:
+- Kullanıcıdan kaç yaş büyük olduğu seçilir
+- Eğitim alanı / uzmanlığı belirlenir (akademik, spor, müzik, sanat, iş)
+- Seçilen moda göre (duygusal, akademik, hobi, kariyer) farklı bir ton kullanır
+- Samimi, sıcak ve gerçek bir abla gibi Türkçe konuşur
+- Kriz anında kullanıcıyı bir yetişkine yönlendirir
+
+## Modlar
+1. Duygusal Destek — Dinler, empati kurar, yargılamaz
+2. Akademik Yardım — Ders, sınav, ödev konularında rehberlik eder
+3. Hobi / İlgi Alanları — Film, müzik, kitap, spor hakkında sohbet eder
+4. Kariyer / İş Hayatı — Yetişkinlere iş hayatında tavsiye verir
+
+## Rakip Durum
+- Replika: Genel amaçlı AI arkadaş, Türkçe desteği zayıf, aile odaklı değil
+- Character.ai: Karakter canlandırıyor ama güvenlik sorunları var, Türkçe sınırlı
+- Pi (Inflection): Duygusal destek odaklı ama profil özelleştirmesi yok
+- **Bizim farkımız:** Türkçe, yaş farkı seçimi, aile kurulumu, çoklu mod,
+  Türk aile dinamiklerine uygun kişilik
+
+## Başarı Kriteri
+Kullanıcı profili oluşturup 2 dakika içinde ablasıyla anlamlı bir sohbet
+başlatabilir. Abla gerçek bir abla gibi konuşur — robotik hissettirmez.
+Ebeveynler çocuklarının bu uygulamayı güvenle kullandığını hisseder.
