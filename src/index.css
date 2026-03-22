@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+html {
+  font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mood-quote {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+@keyframes welcome-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.02);
+  }
+}
+
+@keyframes welcome-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes avatar-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes thinking-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.animate-welcome-float {
+  animation: welcome-float 5s ease-in-out infinite;
+}
+
+.animate-welcome-glow {
+  animation: welcome-glow 4s ease-in-out infinite;
+}
+
+.animate-avatar-breathe {
+  animation: avatar-breathe 1.15s ease-in-out infinite;
+}
+
+.animate-thinking-soft {
+  animation: thinking-soft 0.95s ease-in-out infinite;
+}
+
+@keyframes mood-marquee-seamless {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.mood-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: mood-marquee-seamless 52s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mood-marquee-track {
+    animation: none;
+    width: 100%;
+    max-width: min(100%, 48rem);
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+}
