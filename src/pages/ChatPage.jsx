@@ -127,19 +127,14 @@ export default function ChatPage({ profil, onBack }) {
   }
 
   const handleModSecimi = (modeId) => {
-    if (modeId === aktifMod || yukluyor) {
-      return
-    }
+    if (modeId === aktifMod || yukluyor) return
     const modLabel = MODES.find((m) => m.id === modeId)?.label ?? modeId
     const sistemIstegi = `Kullanıcı modu ${modLabel} olarak değiştirdi. Bu moda uygun kısa ve samimi bir geçiş sorusu sor.`
     const tetikleyici = { role: 'user', content: sistemIstegi, gizli: true }
-
     setAktifMod(modeId)
-    setMesajlar((prev) => {
-      const guncel = [...prev, tetikleyici]
-      void runModTransition(guncel, modeId)
-      return guncel
-    })
+    const guncel = [...mesajlar, tetikleyici]
+    setMesajlar(guncel)
+    void runModTransition(guncel, modeId)
   }
 
   const gonder = async () => {
