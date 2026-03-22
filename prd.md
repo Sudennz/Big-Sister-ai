@@ -1,12 +1,62 @@
-1. Ürün Özeti
-Big Sister, yoğun çalışan ebeveynler ile çocukları arasında köprü kuran, AI destekli bir dijital rehberdir. Özellikle tek çocuklar veya ablasıyla/abisiyle büyük yaş farkı olan ve bu nedenle kuşak çatışması yaşayan bireylerin duygusal ve akademik ihtiyaçlarını karşılamak için tasarlanmıştır.
-2. Kullanıcı Rolleri ve Hedef Kitle
-Çocuklar/Gençler (10-18 Yaş): Duygusal destek, ödev yardımı veya hobi sohbeti arayan ana kullanıcılar.Ebeveynler: Çocuklarının ilgi alanlarını ve genel ruh halini (özel detaylara girmeden) takip etmek isteyen çalışan anne-babalar.
-3. Temel Özellikler (Core Features)
-Kişiselleştirilmiş Abla Profili: Kullanıcının seçimine göre ablanın yaşı (yakın yaş veya mentör yaş), uzmanlık alanı (akademik, sanat, spor) ve karakter tonu belirlenir.
-Mod Tabanlı Sohbet Sistemi:🎓 Akademik Mod: Ders çalışma motivasyonu ve ödev yardımı sağlar.💖 Duygusal Mod: Yargılamadan dinleyen, empati kuran "abla şefkati" odaklı dertleşme alanı.🎨 Hobi Modu: Güncel trendler, filmler ve sanat üzerine yaratıcı sohbetler.Ebeveyn Dashboard (Analiz): AI'nın haftalık konuşmalardan çıkardığı duygu durumu ve ilgi alanı özetlerini sunan güvenli panel.
-4. Kullanıcı Akışı (User Flow)
-Kullanıcı veya ebeveyn sisteme giriş yapar ve ideal "Abla" profilini oluşturur.Ana ekranda o anki ihtiyaca göre (Akademik, Duygusal, Hobi) bir mod seçilir.AI, seçilen modun karakterine bürünerek sohbete başlar.Günün sonunda ebeveyn, çocuğun kişisel alanına müdahale etmeden genel bir gelişim özeti alır.
-5. Teknik Gereksinimler (Tech Stack)Frontend: React / Tailwind CSS (Modern ve mobil uyumlu arayüz).AI Engine: Google AI Studio üzerinden Gemini 1.5 API (Dinamik persona yönetimi için).Yayınlama: Lovable / Netlify (Hızlı prototipleme ve canlıya alma).
-6. Güvenlik ve Etik
-Pedagojik Sınırlar: Sistem mesajları ile AI'nın her zaman güvenli ve destekleyici kalması sağlanacaktır.Gizlilik: Ebeveynlere sadece genel eğilimler raporlanacak, çocuğun özel konuşmaları korunacaktır.
+# Big Sister AI — PRD (Product Requirement Document)
+
+## Proje Özeti
+Big Sister AI, kullanıcıların kendilerine özel bir "abla" profili oluşturarak
+yapay zeka destekli, kişiselleştirilmiş sohbet deneyimi yaşadığı bir web
+uygulamasıdır. Türkçe ağırlıklı, kültüre uygun, sıcak ve samimi bir ton
+hedeflenmektedir.
+
+## Hedef Kullanıcılar
+- **Çocuklar ve gençler (10-18 yaş):** Duygusal destek, akademik yardım,
+  hobi sohbeti arayan, ebeveynleriyle yeterince vakit geçiremeyen bireyler
+- **Ebeveynler:** Çocukları için güvenli bir AI abla profili kurmak isteyen aileler
+- **Yetişkinler (18+):** Kariyer tavsiyesi veya duygusal destek arayan bireyler
+
+## Temel Özellikler
+
+### 1. Abla Profili Oluşturma
+- Ablanın yaş farkı seçimi (1-10 yıl büyük)
+- Uzmanlık alanı seçimi: Akademik / Spor / Müzik / Sanat / İş Hayatı
+- Abla ismi belirleme
+- Kullanıcı adı ve yaş girişi
+
+### 2. Sohbet Modları
+- **Duygusal Mod:** Dinler, empati kurar, yargılamaz
+- **Akademik Mod:** Ders, sınav, ödev konularında rehberlik eder
+- **Hobi Modu:** Film, müzik, kitap, spor hakkında sohbet eder
+- **Kariyer Modu:** İş hayatında tavsiye verir (18+ kullanıcılar için)
+
+### 3. Sohbet Arayüzü
+- Gerçek zamanlı mesajlaşma arayüzü
+- Mod değiştirme butonu
+- Sohbet geçmişi (oturum bazlı)
+- Abla profil bilgisi görünür şekilde üstte
+
+### 4. Güvenlik Katmanı
+- Kriz kelimesi tespiti (intihar, zarar verme vb.)
+- Kriz durumunda kullanıcıyı bir yetişkine yönlendirme mesajı
+- 10-18 yaş kullanıcılar için içerik filtresi
+
+## Ekranlar
+1. **Karşılama Ekranı:** Uygulama tanıtımı, "Başla" butonu
+2. **Profil Oluşturma Ekranı:** Abla ve kullanıcı bilgileri formu
+3. **Sohbet Ekranı:** Mod seçimi + mesajlaşma arayüzü
+
+## Teknik Gereksinimler
+- Frontend: React + Vite
+- Stil: Tailwind CSS
+- AI: Claude API (Anthropic)
+- Deploy: Netlify
+- Dil: Türkçe ağırlıklı
+
+## Başarı Kriterleri
+- Kullanıcı 2 dakika içinde profil oluşturup sohbet başlatabilir
+- Abla robotik hissettirmez, gerçek bir abla gibi konuşur
+- Uygulama mobil ve masaüstünde sorunsuz çalışır
+- Kriz durumlarında güvenli yönlendirme yapılır
+
+## Kapsam Dışı (Bu Sürümde Yok)
+- Kullanıcı hesabı / giriş sistemi
+- Sohbet geçmişinin kaydedilmesi
+- Ebeveyn paneli
+- Bildirim sistemi
