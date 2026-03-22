@@ -1,20 +1,36 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # Big-Sister-ai
->>>>>>> 77f77ccfc41cb7f50dfd44e441c947eec3583e06
+# Big Sister AI 💜
+
+## Problem
+Gençler duygusal, akademik ve sosyal konularda rehberliğe ihtiyaç duyduklarında güvenilir, yargılamayan biri bulamıyor. Profesyonel destek pahalı, arkadaşlar her zaman mevcut değil.
+
+## Çözüm
+Big Sister AI, kullanıcıya kişiselleştirilmiş bir "abla" karakteri atayan ve 5 farklı modda (duygusal, akademik, hobi, sosyal ilişkiler, kariyer) sohbet eden bir AI uygulamasıdır. Gemini API sayesinde abla gerçek bir insan gibi sıcak ve samimi Türkçe konuşur.
+
+## Canlı Demo
+- 🌐 Yayın Linki: https://grand-longma-295a63.netlify.app
+- 🎥 Demo Video: *(yakında eklenecek)*
+
+## Kullanılan Teknolojiler
+- React + Vite
+- Tailwind CSS
+- Gemini API (Google AI Studio)
+- Netlify (Deploy)
+
+## Özellikler
+- 👤 Kişiselleştirilmiş abla profili oluşturma
+- 💬 5 farklı sohbet modu (Duygusal, Akademik, Hobi, Sosyal, Kariyer)
+- 🔄 Mod geçişlerinde otomatik AI yönlendirmesi
+- 🚨 Kriz kelimesi algılama ve yönlendirme sistemi
+- 📅 Günlük karşılama mesajı
+
+## Nasıl Çalıştırılır?
+```bash
+npm install
+npm run dev
+```
+`.env` dosyasına Gemini API key ekle:
+
+
+## Geliştirici
+Sude Naz Ateş
