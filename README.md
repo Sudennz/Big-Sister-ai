@@ -1,5 +1,5 @@
 # Big-Sister-ai
-# Big Sister AI 💜
+# Big Sister AI 
 
 ## Problem
 Gençler duygusal, akademik ve sosyal konularda rehberliğe ihtiyaç duyduklarında güvenilir, yargılamayan biri bulamıyor. Profesyonel destek pahalı, arkadaşlar her zaman mevcut değil.
