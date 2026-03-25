@@ -1,4 +1,6 @@
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+console.log('API KEY:', GEMINI_API_KEY?.slice(0, 10));
+
 
 const KRIZ_KELIMELERI = [
   'intihar', 'kendime zarar', 'ölmek istiyorum',
