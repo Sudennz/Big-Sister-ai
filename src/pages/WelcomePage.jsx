@@ -189,9 +189,7 @@ const WelcomePage = ({ onStart }) => {
         aria-label="Ablandan mesajlar"
       >
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="font-mood-quote mb-2 text-center text-2xl font-medium tracking-wide text-slate-700 sm:text-3xl">
-            Ablandan bir mesaj var 💌
-          </h2>
+          
           <p className="mx-auto mb-2 max-w-md text-center text-[11px] font-light uppercase tracking-[0.28em] text-slate-400">
             HER DUYGU İÇİN BİR KONU
           </p>
