@@ -1,6 +1,4 @@
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-console.log('API KEY:', GEMINI_API_KEY?.slice(0, 10));
-
+const GROQ_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const KRIZ_KELIMELERI = [
   'intihar', 'kendime zarar', 'ölmek istiyorum',
@@ -13,7 +11,7 @@ function krizKontrol(mesaj) {
   );
 }
 
-function sistemPromptOlustur(profil, mod, mesajlar = []) {
+function sistemPromptOlustur(profil, mod) {
   const modTalimatlari = {
     duygusal: `Şu an duygusal destek modundasın. Dinle, empati kur, yargılama. Eğer kullanıcı az önce farklı bir moddan geçtiyse "Seni dinlemek için buradayım, içini dökmek istediğin bir şey var mı?" diye sor.`,
     akademik: `Şu an akademik yardım modundasın. Derslerde rehberlik et. Eğer kullanıcı az önce farklı bir moddan geçtiyse "Hangi ders veya konu seni zorluyor şu an?" diye sor.`,
@@ -30,39 +28,39 @@ export async function mesajGonder(mesajlar, profil, mod) {
     return `${profil.kullaniciAdi}, seni çok önemsiyorum. Lütfen hemen güvendiğin bir yetişkine başvur veya 182 numaralı ALO Psikiyatri Hattı'nı ara. Yalnız değilsin. 💙`;
   }
 
-  const sistemPrompt = sistemPromptOlustur(profil, mod, mesajlar)
+  const sistemPrompt = sistemPromptOlustur(profil, mod)
 
-  const tumMesajlar = [
-    { role: 'user', parts: [{ text: sistemPrompt }] },
-    { role: 'model', parts: [{ text: 'Anlaşıldı, sana yardımcı olmaya hazırım!' }] },
+  const mesajListesi = [
     ...mesajlar.slice(0, -1).map((m) => ({
-      role: m.role === 'user' ? 'user' : 'model',
-      parts: [{ text: m.content }],
+      role: m.role === 'user' ? 'user' : 'assistant',
+      content: m.content,
     })),
-    { role: 'user', parts: [{ text: mesajlar[mesajlar.length - 1].content }] }
+    { role: 'user', content: mesajlar[mesajlar.length - 1].content }
   ];
 
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: tumMesajlar,
-        generationConfig: {
-          maxOutputTokens: 1024,
-          temperature: 0.9
-        }
-      })
-    }
-  );
+  const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${GROQ_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: 'llama-3.3-70b-versatile',
+      messages: [
+        { role: 'system', content: sistemPrompt },
+        ...mesajListesi,
+      ],
+      max_tokens: 1024,
+      temperature: 0.9,
+    }),
+  });
 
   if (!response.ok) {
     const err = await response.json();
-    console.error('Gemini API hatası:', err);
+    console.error('Groq API hatası:', err);
     throw new Error('API hatası: ' + response.status);
   }
 
   const data = await response.json();
-  return data.candidates[0].content.parts[0].text;
+  return data.choices[0].message.content;
 }
