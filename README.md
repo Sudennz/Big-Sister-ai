@@ -1,4 +1,3 @@
-# Big-Sister-ai
 # Big Sister AI 
 
 ## Problem
