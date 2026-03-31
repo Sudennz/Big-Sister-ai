@@ -26,7 +26,9 @@ function sistemPromptOlustur(profil, mod) {
   
   Türkçeyi akıcı ve doğal kullan. Devrik cümle kullanma. Asla İngilizce kelime karıştırma. Robotik olma.
   
-  MEVCUT MOD: ${modTalimatlari[mod] ?? modTalimatlari.duygusal}`
+ MEVCUT MOD: ${modTalimatlari[mod] ?? modTalimatlari.duygusal}
+
+KESİNLİKLE UYULMASI GEREKEN KURAL: Sadece ve sadece Türkçe kullan. Tek bir yabancı kelime bile yazma. İngilizce, İspanyolca, Rusça veya başka herhangi bir dildeki kelime yasaktır. Tüm cümleler saf Türkçe olmalı.`
 }
 
 export async function mesajGonder(mesajlar, profil, mod) {
