@@ -90,7 +90,17 @@ export default function ChatPage({ profil, onBack }) {
   const [mesajlar, setMesajlar] = useState(() => buildInitialMesajlar(profil.kullaniciAdi))
   const [input, setInput] = useState('')
   const [yukluyor, setYukluyor] = useState(false)
-  const [aktifMod, setAktifMod] = useState('duygusal')
+  const [aktifMod, setAktifMod] = useState(() => {
+    const uzmanlikModMap = {
+      akademik: 'akademik',
+      spor: 'hobi',
+      müzik: 'hobi',
+      sanat: 'hobi',
+      sosyal: 'sosyal',
+      iş: 'kariyer',
+    }
+    return uzmanlikModMap[profil.uzmanlik] || 'duygusal'
+  })
   const altRef = useRef(null)
 
   const dusunuyorMetni = useMemo(() => `${ablaKisaAd(profil.ablaAdi)} düşünüyor…`, [profil.ablaAdi])
