@@ -31,7 +31,7 @@ Big Sister AI, kullanıcıya kişiselleştirilmiş bir abla karakteri atayan ve 
 
 ---
 
-# Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 | Teknoloji | Kullanım Amacı |
 |-----------|----------------|
@@ -39,6 +39,9 @@ Big Sister AI, kullanıcıya kişiselleştirilmiş bir abla karakteri atayan ve 
 | Tailwind CSS | Stil ve tasarım |
 | Groq API (LLaMA 3.3 70B) | Yapay zeka motoru |
 | Vercel | Deploy ve yayınlama |
+| Cursor | AI destekli geliştirme ortamı |
+| Claude AI | Kod geliştirme ve hata düzeltme |
+| Gemini AI | Proje planlama ve dokümantasyon |
 
 ---
 
