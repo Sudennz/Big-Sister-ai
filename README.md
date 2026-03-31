@@ -17,7 +17,7 @@ Big Sister AI, kullanıcıya kişiselleştirilmiş bir abla karakteri atayan ve 
 # Canlı Demo
 
 - Yayın Linki: https://big-sister-ai.vercel.app
-- Demo Video: *(yakında eklenecek)*
+- Demo Video: https://www.loom.com/share/76b3f769a4cb448bae7a75229fe15b7e
 
 ---
 
