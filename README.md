@@ -1,35 +1,77 @@
-# Big Sister AI 
+# Big Sister AI
 
-## Problem
-Gençler duygusal, akademik ve sosyal konularda rehberliğe ihtiyaç duyduklarında güvenilir, yargılamayan biri bulamıyor. Profesyonel destek pahalı, arkadaşlar her zaman mevcut değil.
+**Gençler için kişiselleştirilmiş yapay zeka abla deneyimi.**
 
-## Çözüm
-Big Sister AI, kullanıcıya kişiselleştirilmiş bir "abla" karakteri atayan ve 5 farklı modda (duygusal, akademik, hobi, sosyal ilişkiler, kariyer) sohbet eden bir AI uygulamasıdır. Gemini API sayesinde abla gerçek bir insan gibi sıcak ve samimi Türkçe konuşur.
+---
 
-## Canlı Demo
-- 🌐 Yayın Linki: https://grand-longma-295a63.netlify.app
-- 🎥 Demo Video: *(yakında eklenecek)*
+# Problem
 
-## Kullanılan Teknolojiler
-- React + Vite
-- Tailwind CSS
-- Gemini API (Google AI Studio)
-- Netlify (Deploy)
+Günümüzde çocuklar ve gençler arasında sosyal dışlanma, duygusal yalnızlık ve aile içi iletişim kopukluğu giderek artmaktadır. Ebeveynler çocuk psikolojisini tam olarak anlayamıyor; günümüz trendlerini ve alışkanlıklarını takip edemedikleri için çocuklarıyla aralarında derin bir boşluk oluşuyor. Bu boşluğu doldurmak ve gençlere güvenli bir sohbet alanı sunmak amacıyla Big Sister AI'ı geliştirdim. Yapay zeka destekli abla modeliyle çocuklar ve gençler; duygusal, akademik, sosyal ve kariyer konularında güvenilir bir ablaya danışarak yalnızlıklarını azaltabilir.
 
-## Özellikler
-- 👤 Kişiselleştirilmiş abla profili oluşturma
-- 💬 5 farklı sohbet modu (Duygusal, Akademik, Hobi, Sosyal, Kariyer)
-- 🔄 Mod geçişlerinde otomatik AI yönlendirmesi
-- 🚨 Kriz kelimesi algılama ve yönlendirme sistemi
-- 📅 Günlük karşılama mesajı
+# Çözüm
 
-## Nasıl Çalıştırılır?
+Big Sister AI, kullanıcıya kişiselleştirilmiş bir abla karakteri atayan ve 5 farklı modda Türkçe sohbet eden bir yapay zeka uygulamasıdır. Groq API ile güçlendirilen abla, gerçek bir insan gibi sıcak ve samimi konuşur. Kriz kelimesi algılama sistemi sayesinde kullanıcı her zaman güvende tutulur.
+
+---
+
+# Canlı Demo
+
+- Yayın Linki: https://big-sister-ai.vercel.app
+- Demo Video: *(yakında eklenecek)*
+
+---
+
+# Özellikler
+
+- Kişiselleştirilmiş abla profili oluşturma (isim, yaş farkı, uzmanlık alanı)
+- 5 farklı sohbet modu: Duygusal, Akademik, Hobi, Sosyal İlişkiler, Kariyer
+- Mod geçişlerinde otomatik AI yönlendirmesi
+- Kriz kelimesi algılama ve profesyonel yardım yönlendirme sistemi
+- Günlük karşılama mesajı sistemi
+
+---
+
+# Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| React + Vite | Frontend framework |
+| Tailwind CSS | Stil ve tasarım |
+| Groq API (LLaMA 3.3 70B) | Yapay zeka motoru |
+| Vercel | Deploy ve yayınlama |
+
+---
+
+# Kurulum
+
+Projeyi yerel ortamda çalıştırmak için:
 ```bash
+git clone https://github.com/Sudennz/Big-Sister-ai.git
+cd Big-Sister-ai
 npm install
 npm run dev
 ```
-`.env` dosyasına Gemini API key ekle:
+
+Kök dizinde `.env` dosyası oluştur:
+```
 VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+---
+
+## Proje Yapısı
+```
+src/
+  pages/
+    WelcomePage.jsx      # Ana karşılama sayfası
+    ProfilePage.jsx      # Abla profili oluşturma
+    ChatPage.jsx         # Sohbet ekranı
+  services/
+    claudeService.js     # Groq API entegrasyonu
+```
+
+---
 
 ## Geliştirici
+
 Sude Naz Ateş
